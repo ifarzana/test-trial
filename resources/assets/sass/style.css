@@ -1,0 +1,156 @@
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+/*.wrapper {
+    padding-top: 54px;
+}*/
+.wrapper .span-header {
+    font-size: 20px;
+}
+
+/*Typeahead*/
+ul.typeahead.dropdown-menu {
+    border: 1px solid #0062cc;
+
+}
+ul.typeahead.dropdown-menu li {
+    padding: 5px;
+    border-bottom: 1px solid #e4e4e4;
+}
+ul.typeahead.dropdown-menu li > a {
+    white-space: normal;
+}
+ul.typeahead.dropdown-menu li > a .text-primary
+{
+    color: #555555 !important;
+
+}
+
+ul.typeahead.dropdown-menu li.active > a .text-primary,
+ul.typeahead.dropdown-menu li > a:active .text-primary,
+ul.typeahead.dropdown-menu li > a:hover .text-primary {
+    color: #1A1A1A !important;
+}
+
+/*divs*/
+.card-body .signature-div {
+    background-color: #d2e3ea5e;
+    padding: 10px;
+    border: 1px solid #d2e3ea5e;
+    border-radius: 5px;
+}
+
+/*Table*/
+.term-table td,
+.term-table th {
+    padding: 0.1rem;
+}
+.term-table td,
+.term-table th
+{
+    padding-left: 5px;
+}
+
+.width-95
+{
+    width:95%;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.width-95 thead th {
+    background-color: skyblue;
+    border: 1px solid #ffffff;
+}
+.width-95 td,
+.width-95 th {
+    border: 1px solid #ffffff;
+}
+
+
+ol.lower-alpha,
+ol.upper-alpha,
+ol.lower-roman,
+ol.numbered-list {
+    text-align: justify;
+    counter-reset: list;
+    margin: 0;
+}
+ol.lower-alpha > li,
+ol.upper-alpha > li,
+ol.lower-roman > li,
+ol.numbered-list > li {
+    counter-increment: list;
+    display: block;
+    position: relative;
+ }
+ol.lower-alpha > li:before {
+    content: counter(list, lower-alpha) ". ";
+    display: block;
+    position: absolute;
+    left: -1.4em;
+}
+ol.upper-alpha > li:before {
+    content: "(" counter(list, upper-alpha) ") ";
+    display: block;
+    position: absolute;
+    left: -2.2em;
+}
+
+ol.lower-roman > li:before {
+    content: "(" counter(list, lower-roman) ") ";
+    display: block;
+    position: absolute;
+    left: -1.6em;
+}
+
+ol.numbered-list > li:before {
+    content: counter(list) ") ";
+    display: block;
+    position: absolute;
+    left: -2.2em;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2a439a;
+    border-color: #2a439a;
+}
+
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+#message-alert {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+}
